@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head id="ctl00_myhead">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>:: Amwal Financial Consultants ::</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+  <form name="aspnetForm" method="post" action="news.aspx" id="aspnetForm">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM0Mzc3MzIzMg8WAh4Fc3RhcnRmFgJmD2QWAgIDD2QWBAIBDzwrAA0CAA8WAh4LXyFEYXRhQm91bmRnZAwUKwAHZBQrAAJkFCsAAwUHMDowLDA6MRQrAAIWBh4EVGV4dAULT3VyIE1pc3Npb24eBVZhbHVlBQtPdXIgTWlzc2lvbh4LTmF2aWdhdGVVcmwFD1BhZ2VzLmFzcHg/SUQ9M2QUKwACFgYfAgUVRXhwZXJ0cyAmIENvbnN1bHRhbnRzHwMFFUV4cGVydHMgJiBDb25zdWx0YW50cx8EBQ9FeHBlcnRWaWV3LmFzcHhkFCsAAmQUKwAJBR8wOjAsMDoxLDA6MiwwOjMsMDo0LDA6NSwwOjYsMDo3FCsAAhYGHwIFHkluaXRpYWwgUHVibGljIE9mZmVyaW5ncyAoSVBPKR8DBR5Jbml0aWFsIFB1YmxpYyBPZmZlcmluZ3MgKElQTykfBAUYU2VydmljZURldGFpbHMuYXNweD9JRD02ZBQrAAIWBh8CBRFQcml2YXRlIFBsYWNlbWVudB8DBRFQcml2YXRlIFBsYWNlbWVudB8EBRhTZXJ2aWNlRGV0YWlscy5hc3B4P0lEPTdkFCsAAhYGHwIFIE1lcmdlcnMgQWNxdWlzaXRpb25zICYgRGlzcG9zYWxzHwMFIE1lcmdlcnMgQWNxdWlzaXRpb25zICYgRGlzcG9zYWxzHwQFGFNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9OGQUKwACFgYfAgURQ29ycG9yYXRlIGZpbmFuY2UfAwURQ29ycG9yYXRlIGZpbmFuY2UfBAUYU2VydmljZURldGFpbHMuYXNweD9JRD05ZBQrAAIWBh8CBTxDb252ZXJ0aW5nIEZhbWlseSBPd25lZCBFbnRlcnByaXNlcyBUbyBKb2ludCBTdG9jayBDb21wYW5pZXMfAwU8Q29udmVydGluZyBGYW1pbHkgT3duZWQgRW50ZXJwcmlzZXMgVG8gSm9pbnQgU3RvY2sgQ29tcGFuaWVzHwQFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTBkFCsAAhYGHwIFF0NvcnBvcmF0ZSBSZXN0cnVjdHVyaW5nHwMFF0NvcnBvcmF0ZSBSZXN0cnVjdHVyaW5nHwQFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTFkFCsAAhYGHwIFKkludmVzdG1lbnQgQXBwcmFpc2FsICYgRmVhc2liaWxpdHkgU3R1ZGllcx8DBSpJbnZlc3RtZW50IEFwcHJhaXNhbCAmIEZlYXNpYmlsaXR5IFN0dWRpZXMfBAUZU2VydmljZURldGFpbHMuYXNweD9JRD0xMmQUKwACFgYfAgUrVmFsdWF0aW9uIE9mIFNoYXJlcyAmQ2xvc2VseSBIZWxkIENvbXBhbmllcx8DBStWYWx1YXRpb24gT2YgU2hhcmVzICZDbG9zZWx5IEhlbGQgQ29tcGFuaWVzHwQFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTNkZGRkZGQCCw9kFgYCAQ88KwANAQAPFgYfAWceCVBhZ2VDb3VudAIBHgtfIUl0ZW1Db3VudAIDZBYCZg9kFgpmDw8WAh4HVmlzaWJsZWhkZAIBD2QWAmYPZBYIAgEPDxYCHghJbWFnZVVybAVFfi9JbWFnZWNyZWF0b3IuYXNoeD9wPS9BZG1pbi9VcGxvYWRzL1BpY18yXzEyODMxOTMxMjM1NjA5Mzc1MC5naWYmcz1zZGQCAw8PFgIfAgU1RmVhcnMgb2YgdGhlIGNvbGxhcHNlIG9mIHRoZSBnbG9iYWwgZmluYW5jaWFsIG1hcmtldHNkZAIFDw8WAh8CBckBSGVyIG5ld3NwYXBlciB0aGUgIlRpbWVzIiBCcml0aXNoIGludmVzdG9ycyByYWNlZCB5ZXN0ZXJkYXkgdG8gd2l0aGRyYXcgdGhlaXIgbW9uZXkgZnJvbSB0aGUgYm91cnNlcywgYW1pZCBmZWFycyB0aGF0IHRoZSBjcmlzaXMgd2lsbCB3b3JzZW4gZ2xvYmFsIGZpbmFuY2lhbCBtYXJrZXRzLCBhbmQgcG9zc2libHkgbGVhZCB0byBpdHMgY29sbGFwc2UuZGQCBg8VARVOZXdzRGV0YWlscy5hc3B4P0lEPTZkAgIPZBYCZg9kFgYCAw8PFgIfAgU5QXdhaXRpbmcgcmV0dXJuIG9mIDY0IGJpbGxpb24gcml5YWxzIG9mIHRoZSBTYXVkaSBlY29ub215ZGQCBQ8PFgIfAgX6AUVzdGltYXRlcyBpbmRpY2F0ZSB0aGF0IHRoZSBTYXVkaSBlY29ub215IGFuZCB0aGUgY2FwaXRhbCBtYXJrZXQgaW4gcGFydGljdWxhciwgd2lsbCBiZW5lZml0IGZyb20gdGhlIGNvbGxhcHNlIGluIHdvcmxkIHN0b2NrIG1hcmtldHMgb3ZlciB0aGUgcGFzdCB0aHJlZSBkYXlzIGR1ZSB0byB0aGUgY3Jpc2lzIG9mIHRoZSByZWFsIGVzdGF0ZSBmaW5hbmNlIGluIHRoZSBVbml0ZWQgU3RhdGVzLiBUaGUgbG9jYWwgc3RvY2sgbWFya2V0IGlkZAIGDxUBFU5ld3NEZXRhaWxzLmFzcHg/SUQ9N2QCAw9kFgJmD2QWBgIDDw8WAh8CBVNPbmUgY29tcGFueSBmb3IgdGhlIFN1cHJlbWUgLi4gVGhlIHRyYW5zYWN0aW9ucyByZWxhdGVkIHZhbHVlIG9mIDYuNCBiaWxsaW9uIHJpeWFsc2RkAgUPDxYCHwIF+gFTYXVkaSBzaGFyZXMgaW5pdGlhdGVkIHRyYW5zYWN0aW9ucyByZWxhdGVkIHRvIHRoZSB3ZWVrIHNsaWdodGx5IGxvd2VyIGFmdGVyIGZsdWN0dWF0aW5nIHdhdmVzIHdpdG5lc3NlZCB0aGUgZ2VuZXJhbCBpbmRleCBvZiB0aGUgbWFya2V0IHdpdGhpbiBhIHJlbGF0aXZlbHkgbmFycm93IG1hcmdpbiBjbG9zZWQgdG8gdGhlIGltcGFjdCBhdCB0aGUgbGV2ZWwgb2YgNzcxMSBwb2ludHMsIGRvd24gYnkgZm91ciBsb3N0IDAuMDYlLiBBZnRlZGQCBg8VARVOZXdzRGV0YWlscy5hc3B4P0lEPThkAgQPDxYCHwdoZGQCAw8PFgIfB2hkZAIFDw8WAh8HaGRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRJjdGwwMCRJbWFnZUJ1dHRvbjEFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkR3JpZFZpZXcxD2dk5WifTJ2kneV5JOm1yqDreCw/Hhs="> 
+    <script src="/WebResource.axd?d=FKueep1iRERnyq5qqu8fqA2&amp;t=633197202879462318" type="text/javascript"></script>
+    <table width="779" style="height:100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tr>
+        <td height="100%" align="right" valign="top">
+          <table width="779" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="height:100%">
+            <tr>
+              <td width="2" align="right" valign="top">&nbsp;</td>
+              <td width="141" height="100%" align="right" valign="top">
+                <table width="141" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="146" align="center" valign="middle"><img src="images/right/Logo.gif" width="130" height="117"></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <a href="#ctl00_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=DgNWkxle4ts5htuJqmIibw2&amp;t=633197202879462318" width="0" height="0" border="0"></a>
+                      <table id="ctl00_Menu1" cellpadding="0" cellspacing="0" border="0" height="22">
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/About_US.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/Services.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="news.aspx"><img src="images/right/News.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="inquiry.aspx"><img src="images/right/Invest.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="Submit.aspx"><img src="images/right/Jobs.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="links.aspx"><img src="images/right/Links.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <div id="ctl00_Menu1n0Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="Pages.aspx?ID=3"><font face="Tahoma" color="white" size="1">Our Mission</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ExpertView.aspx"><font face="Tahoma" color="white" size="1">Experts & Consultants</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=XhPfv1U1g8hMR9caKj690mMHA4WrU9x9s66pvk0kkzo1&amp;t=633197202879462318" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=wvdPt48BeJSaoLaM_2hgzJxUHJl2AyKHnuuDBvvTxYs1&amp;t=633197202879462318" alt="Scroll down"></div>
+                      </div>
+                      <div id="ctl00_Menu1n1Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=6"><font face="Tahoma" color="white" size="1">Initial Public Offerings (IPO)</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=7"><font face="Tahoma" color="white" size="1">Private Placement</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=8"><font face="Tahoma" color="white" size="1">Mergers Acquisitions & Disposals</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=9"><font face="Tahoma" color="white" size="1">Corporate finance</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=10"><font face="Tahoma" color="white" size="1">Converting Family Owned Enterprises To Joint Stock Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=11"><font face="Tahoma" color="white" size="1">Corporate Restructuring</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=12"><font face="Tahoma" color="white" size="1">Investment Appraisal & Feasibility Studies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=13"><font face="Tahoma" color="white" size="1">Valuation Of Shares &Closely Held Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=XhPfv1U1g8hMR9caKj690mMHA4WrU9x9s66pvk0kkzo1&amp;t=633197202879462318" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=wvdPt48BeJSaoLaM_2hgzJxUHJl2AyKHnuuDBvvTxYs1&amp;t=633197202879462318" alt="Scroll down"></div>
+                      </div><a id="ctl00_Menu1_SkipLink"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" align="right" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <table width="141" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="23" align="left" valign="top"><img src="images/right/Search_Tit.gif" width="84" height="18"></td>
+                        </tr>
+                        <tr>
+                          <td height="46" align="right" valign="top" background="images/bg/Search_Bg.gif">
+                            <table width="141" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="24" align="center"><input name="ctl00$TextBox1" type="text" id="ctl00_TextBox1" class="textarea"></td>
+                              </tr>
+                              <tr>
+                                <td height="22" align="right" valign="middle"><input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="images/right/Search_Button.gif" align="absmiddle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ImageButton1&quot;, &quot;&quot;, true, &quot;ssss&quot;, &quot;&quot;, false, false))" border="0"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top">
+                      <div id="ctl00_Flashar"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <a href="javascript:window.open('http://www.oanda.com/convert/classic/');void(0);"><img src="images/right/Curancy.gif" width="141" height="169"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="7" align="right" valign="top">&nbsp;</td>
+              <td width="626" align="right" valign="top" style="height:100%">
+                <table width="626" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                  <tr>
+                    <td height="90" align="right" valign="top" background="images/bg/Bg_Top.gif">
+                      <table width="270" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="25">&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="Default.aspx"><img src="images/toplinks/Home.gif" width="47" height="14"></a>
+                          </td>
+                          <td>
+                            <a href="inquiry.aspx"><img src="images/toplinks/Invest.gif" width="65" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="ContactUS.aspx"><img src="images/toplinks/Contact.gif" width="76" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="../Content/Default.aspx"><img src="images/toplinks/Arab.gif" width="36" height="14"></a>
+                          </td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top"><img src="images/right/Header.jpg" width="626" height="161"></td>
+                  </tr>
+                  <tr>
+                    <td height="31" align="right" valign="top">
+                      <table width="626" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="35" height="31" align="right" valign="top"><img src="images/inerpage/News_Right.gif" width="35" height="31"></td>
+                          <td align="left" valign="middle" background="images/inerpage/News_Bg.gif"><iframe src="NewsBar.aspx" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width:100%; height:20px; float:left;"></iframe></td>
+                          <td width="34" align="right" valign="top"><img src="images/inerpage/News_Left.gif" width="34" height="31"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" style="height:100%" valign="top">
+                      <table width="626" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                        <tr>
+                          <td width="5" align="right" valign="top" background="images/inerpage/Border_Right.gif" style="height: 16px"></td>
+                          <td width="620" align="right" valign="top" style="height: 16px"></td>
+                          <td width="4" align="right" valign="top" style="height: 16px"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="28" align="left" valign="top"><img src="images/pages/News_Tit.gif"></td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="10" align="right" valign="top"></td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="10" align="right" valign="top">
+                            <div>
+                              <table cellspacing="0" rules="all" border="0" id="ctl00_ContentPlaceHolder1_GridView1" width="470">
+                                <tr>
+                                  <td>
+                                    <table width="618" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="right" valign="top" style="background-image:url(images/pages/News_Bg.gif); background-repeat:repeat-x">
+                                          <div style="width:618px; padding:5px; position:relative;" class="content" align="right">
+                                            <div align="right" id="wellpic"></div><span id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Label1" class="titles">Fears of the collapse of the global financial markets</span><br>
+                                            <br>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Label3" class="text">Her newspaper the "Times" British investors raced yesterday to withdraw their money from the bourses, amid fears that the crisis will worsen global financial markets, and possibly lead to its collapse.</span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="top">
+                                          <a href='NewsDetails.aspx?ID=6'><img src="../Content_en/images/inerpage/More.gif"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="middle" style="height: 2px"><img src="images/pages/Strip_News.gif" width="620" height="16"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table width="618" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="right" valign="top" style="background-image:url(images/pages/News_Bg.gif); background-repeat:repeat-x">
+                                          <div style="width:618px; padding:5px; position:relative;" class="content" align="right">
+                                            <div align="right" id="wellpic"></div><span id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Label1" class="titles">Awaiting return of 64 billion riyals of the Saudi economy</span><br>
+                                            <br>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Label3" class="text">Estimates indicate that the Saudi economy and the capital market in particular, will benefit from the collapse in world stock markets over the past three days due to the crisis of the real estate finance in the United States. The local stock market i</span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="top">
+                                          <a href='NewsDetails.aspx?ID=7'><img src="../Content_en/images/inerpage/More.gif"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="middle" style="height: 2px"><img src="images/pages/Strip_News.gif" width="620" height="16"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table width="618" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="right" valign="top" style="background-image:url(images/pages/News_Bg.gif); background-repeat:repeat-x">
+                                          <div style="width:618px; padding:5px; position:relative;" class="content" align="right">
+                                            <div align="right" id="wellpic"></div><span id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Label1" class="titles">One company for the Supreme .. The transactions related value of 6.4 billion riyals</span><br>
+                                            <br>
+                                            <span id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Label3" class="text">Saudi shares initiated transactions related to the week slightly lower after fluctuating waves witnessed the general index of the market within a relatively narrow margin closed to the impact at the level of 7711 points, down by four lost 0.06%. Afte</span>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="top">
+                                          <a href='NewsDetails.aspx?ID=8'><img src="../Content_en/images/inerpage/More.gif"></a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" valign="middle" style="height: 2px"><img src="images/pages/Strip_News.gif" width="620" height="16"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="30" align="center" valign="middle"></td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="3" align="right" valign="top">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="54" align="right" valign="bottom" background="images/bg/Footer_Bg.gif">
+          <div id="allrights">
+            All rights reserved © AMWAL FINANCIAL CONSULTANTS 2007
+          </div>
+          <div id="allrights2">
+            Powered By Tech Heights<a href="http://www.tech.com.sa" target="_blank"><img src="images/inerpage/Logo.gif" width="18" height="19" hspace="3" align="absmiddle"></a>
+          </div>
+        </td>
+      </tr>
+    </table><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQLazcHQDAKexK2NCQKexK2NCQK33sGJAQLssvLQAzg3hnwcgav32x5OM1rEsw5wiUHo"> 
+    <script type="text/javascript">
+
+
+    <!--
+    var ctl00_Menu1_Data = new Object();
+    ctl00_Menu1_Data.disappearAfter = 500;
+    ctl00_Menu1_Data.horizontalOffset = 0;
+    ctl00_Menu1_Data.verticalOffset = 0;
+    ctl00_Menu1_Data.hoverClass = ' menure';
+    // -->
+    </script>
+  </form>
+</body>
+</html>
