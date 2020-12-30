@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head id="ctl00_myhead">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>:: Amwal Financial Consultants ::</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+  <form name="aspnetForm" method="post" action="ContactUS.aspx" id="aspnetForm">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU4MzM1OTUxNA9kFgJmD2QWAgIDD2QWBAIBDzwrAA0CAA8WAh4LXyFEYXRhQm91bmRnZAw8KwAJAgEUKwACZBQrAAMFBzA6MCwwOjEUKwACFgYeBFRleHQFC091ciBNaXNzaW9uHgVWYWx1ZQULT3VyIE1pc3Npb24eC05hdmlnYXRlVXJsBQ9QYWdlcy5hc3B4P0lEPTNkFCsAAhYGHwEFCVRlYW0gV29yax8CBQlUZWFtIFdvcmsfAwUPRXhwZXJ0Vmlldy5hc3B4ZAIUKwACZBQrAAkFHzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcUKwACFgYfAQUeSW5pdGlhbCBQdWJsaWMgT2ZmZXJpbmdzIChJUE8pHwIFHkluaXRpYWwgUHVibGljIE9mZmVyaW5ncyAoSVBPKR8DBRhTZXJ2aWNlRGV0YWlscy5hc3B4P0lEPTZkFCsAAhYGHwEFEVByaXZhdGUgUGxhY2VtZW50HwIFEVByaXZhdGUgUGxhY2VtZW50HwMFGFNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9N2QUKwACFgYfAQUgTWVyZ2VycyBBY3F1aXNpdGlvbnMgJiBEaXNwb3NhbHMfAgUgTWVyZ2VycyBBY3F1aXNpdGlvbnMgJiBEaXNwb3NhbHMfAwUYU2VydmljZURldGFpbHMuYXNweD9JRD04ZBQrAAIWBh8BBRFDb3Jwb3JhdGUgZmluYW5jZR8CBRFDb3Jwb3JhdGUgZmluYW5jZR8DBRhTZXJ2aWNlRGV0YWlscy5hc3B4P0lEPTlkFCsAAhYGHwEFPENvbnZlcnRpbmcgRmFtaWx5IE93bmVkIEVudGVycHJpc2VzIFRvIEpvaW50IFN0b2NrIENvbXBhbmllcx8CBTxDb252ZXJ0aW5nIEZhbWlseSBPd25lZCBFbnRlcnByaXNlcyBUbyBKb2ludCBTdG9jayBDb21wYW5pZXMfAwUZU2VydmljZURldGFpbHMuYXNweD9JRD0xMGQUKwACFgYfAQUXQ29ycG9yYXRlIFJlc3RydWN0dXJpbmcfAgUXQ29ycG9yYXRlIFJlc3RydWN0dXJpbmcfAwUZU2VydmljZURldGFpbHMuYXNweD9JRD0xMWQUKwACFgYfAQUqSW52ZXN0bWVudCBBcHByYWlzYWwgJiBGZWFzaWJpbGl0eSBTdHVkaWVzHwIFKkludmVzdG1lbnQgQXBwcmFpc2FsICYgRmVhc2liaWxpdHkgU3R1ZGllcx8DBRlTZXJ2aWNlRGV0YWlscy5hc3B4P0lEPTEyZBQrAAIWBh8BBStWYWx1YXRpb24gT2YgU2hhcmVzICZDbG9zZWx5IEhlbGQgQ29tcGFuaWVzHwIFK1ZhbHVhdGlvbiBPZiBTaGFyZXMgJkNsb3NlbHkgSGVsZCBDb21wYW5pZXMfAwUZU2VydmljZURldGFpbHMuYXNweD9JRD0xM2RkAgsPZBYCAgEPPCsADQEADxYEHwBnHgtfIUl0ZW1Db3VudAIEZBYCZg9kFgxmDw8WAh4HVmlzaWJsZWhkZAIBD2QWAmYPZBYEAgEPDxYCHwEFBlJpeWFkaGRkAgMPDxYCHwEFgAJSaXlhZGg8YnIvPgpPZmZpY2UgNDA4IEFsdW1hbSBPZmZpY2UgQnVpbGRpbmcgU2FsYWggQWwgRGVlbiBTdC48YnIvPgpQLk8uIEJveDogMjcwMjYgUml5YWRoIDExNDE3IEtpbmdkb20gb2YgU2F1ZGkgQXJhYmlhPGJyLz4KVGVsOiAwMDk2NiAxIDI5MTEwMDAgRmF4OiAwMDk2NiAxIDI5MjExMTA8YnIvPgplLW1haWw6IDxhIGNsYXNzPSdSTUVOVScgaHJlZj0ibWFpbHRvOnJpeWFkaEBhbXdhbC5jb20uc2EiPnJpeWFkaEBhbXdhbC5jb20uc2E8L2E+ZGQCAg9kFgJmD2QWBAIBDw8WAh8BBQZEYW1tYW1kZAIDDw8WAh8BBdUBRGFtbWFtPGJyLz4KUC5PLiBCb3g6MTkyNyBEYW1tYW0gMzE0NDE8YnIvPgpLaW5nZG9tIG9mIFNhdWRpIEFyYWJpYTxici8+ClRlbDogMDA5NjYgMyA4MDk3Nzk5IEZheDogMDA5NjYgMyA4MDkxMTc4PGJyLz4KZS1tYWlsOiA8YSBjbGFzcz0nUk1FTlUnIGhyZWY9Im1haWx0bzpkYW1tYW1AYW13YWwuY29tLnNhPGJyLz4iPmRhbW1hbUBhbXdhbC5jb20uc2E8YnIvPjwvYT4KZGQCAw9kFgJmD2QWBAIBDw8WAh8BBQREb2hhZGQCAw8PFgIfAQW+AURvaGEgKEZJTkNPUlApPGJyLz4KUC4gTy4gQm94OiA0NzMyNCBEb2hhIFFhdGFyPGJyLz4KVGVsOiAwMDk3IDQgNDMxMzEyMCA8YnIvPgpGYXg6IDAwOTcgNCA0MzEzMTgwPGJyLz4KZS1tYWlsOiA8YSBjbGFzcz0nUk1FTlUnIGhyZWY9Im1haWx0bzpkb2hhQGZpbmNvcnBncm91cC5jb20iPmRvaGFAZmluY29ycGdyb3VwLmNvbTwvYT5kZAIED2QWAmYPZBYEAgEPDxYCHwEFBUNhaXJvZGQCAw8PFgIfAQXKAUNhaXJvIChGSU5DT1JQKTxici8+CjE1IEFsc3NhZCBDbHViIFN0Ljxici8+CkRva2tpIENhaXJvIEVneXB0PGJyLz4KVGVsIDogMDAyMCAyIDc0OTc2MDAgRmF4OiAwMDIwIDIgMzM1ODk3ODxici8+CmUtbWFpbDogPGEgY2xhc3M9J1JNRU5VJyBocmVmPSJtYWlsdG86Y2Fpcm9AZmluY29ycGdyb3VwLmNvbSI+Y2Fpcm9AZmluY29ycGdyb3VwLmNvbTwvYT5kZAIFDw8WAh8FaGRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRJjdGwwMCRJbWFnZUJ1dHRvbjEFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkR3JpZFZpZXcxDzwrAAkBCAIBZF88GxeFtqwf91e7RUP7/CKKux6U"> 
+    <script src="/WebResource.axd?d=z9uKgrjvqQICpdc21Z4xTQ2&amp;t=633387328430186757" type="text/javascript"></script> 
+    <script language="Javascript">
+
+
+    //         document.write("<span id='clock'></span><br>");
+    //        function upclock()
+    //        {
+    //            var dte = new Date();
+    //            var hrs = dte.getHours();
+    //            var min = dte.getMinutes();
+    //            var sec = dte.getSeconds();
+    //            var col = ":";
+    //            var spc = " ";
+    //            var apm;
+    //            if (12< hrs)
+    //            {
+    //                apm="PM";
+    //                hrs -= 12;
+    //            }
+    //            else
+    //            {
+    //                apm="AM";
+    //            }
+    //            if (hrs == 0) hrs=12;
+    //            if (min <=9) min="0" + min;
+    //            if (sec <=9) sec="0" + sec;
+    //            clock.innerHTML = hrs+col+min+col+sec+spc+apm;
+    //       }
+    //                setInterval("upclock()",1000);
+    </script>
+    <table width="779" style="height:100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tr>
+        <td height="100%" align="right" valign="top">
+          <table width="779" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="height:100%">
+            <tr>
+              <td width="2" align="right" valign="top">&nbsp;</td>
+              <td width="141" height="100%" align="right" valign="top">
+                <table width="141" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="146" align="center" valign="middle"><img src="images/right/Logo.gif" width="130" height="117"></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <a href="#ctl00_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=sqPPpkWvBL_SDL73Kusd4A2&amp;t=633387328430186757" width="0" height="0" border="0"></a>
+                      <table id="ctl00_Menu1" cellpadding="0" cellspacing="0" border="0" height="22">
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/About_US.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/Services.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="news.aspx"><img src="images/right/News.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="invest_with_us.aspx"><img src="images/right/Invest.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="Submit.aspx"><img src="images/right/Jobs.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="links.aspx"><img src="images/right/Links.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="Download.aspx"><img src="images/right/Down.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="Customers.aspx"><img src="images/right/customer_en.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <div id="ctl00_Menu1n0Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="Pages.aspx?ID=3"><font face="Tahoma" color="white" size="1">Our Mission</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ExpertView.aspx"><font face="Tahoma" color="white" size="1">Team Work</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=TzQKNvvny2xvdesX9paGEo3PevBO1W81bUNcDpRrStg1&amp;t=633387328430186757" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=sU-ZipPM0xOZ_iTsmtaC-HjQQ5JHDOpznuCpATHgNjQ1&amp;t=633387328430186757" alt="Scroll down"></div>
+                      </div>
+                      <div id="ctl00_Menu1n1Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=6"><font face="Tahoma" color="white" size="1">Initial Public Offerings (IPO)</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=7"><font face="Tahoma" color="white" size="1">Private Placement</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=8"><font face="Tahoma" color="white" size="1">Mergers Acquisitions & Disposals</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=9"><font face="Tahoma" color="white" size="1">Corporate finance</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=10"><font face="Tahoma" color="white" size="1">Converting Family Owned Enterprises To Joint Stock Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=11"><font face="Tahoma" color="white" size="1">Corporate Restructuring</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n16">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=12"><font face="Tahoma" color="white" size="1">Investment Appraisal & Feasibility Studies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n17">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="19">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=13"><font face="Tahoma" color="white" size="1">Valuation Of Shares &Closely Held Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=TzQKNvvny2xvdesX9paGEo3PevBO1W81bUNcDpRrStg1&amp;t=633387328430186757" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=sU-ZipPM0xOZ_iTsmtaC-HjQQ5JHDOpznuCpATHgNjQ1&amp;t=633387328430186757" alt="Scroll down"></div>
+                      </div><a id="ctl00_Menu1_SkipLink"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" align="right" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="141" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="23" align="left" valign="top"><img src="images/right/Search_Tit.gif" width="84" height="18"></td>
+                        </tr>
+                        <tr>
+                          <td height="46" align="right" valign="top" background="images/bg/Search_Bg.gif">
+                            <table width="141" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center" style="height: 24px"><input name="ctl00$TextBox1" type="text" id="ctl00_TextBox1" class="textarea"></td>
+                              </tr>
+                              <tr>
+                                <td height="22" align="right" valign="middle"><input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="images/right/Search_Button.gif" align="absmiddle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ImageButton1&quot;, &quot;&quot;, true, &quot;ssss5&quot;, &quot;&quot;, false, false))" border="0"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top">
+                      <div id="ctl00_Flashar"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="7" align="right" valign="top">&nbsp;</td>
+              <td width="626" align="right" valign="top" style="height:100%">
+                <table width="626" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                  <tr>
+                    <td height="90" align="right" valign="top" background="images/bg/Bg_Top.gif">
+                      &nbsp;
+                      <table width="270" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="25">&nbsp;</td>
+                          <td height="25"></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="Default.aspx"><img src="images/toplinks/Home.gif" width="47" height="14"></a>
+                          </td>
+                          <td>
+                            <a href="FAQ.aspx"><img src="images/toplinks/FAQ.gif" width="65" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="Invest_With_Us.aspx"><img src="images/toplinks/Invest.gif" width="65" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="ContactUS.aspx"><img src="images/toplinks/Contact.gif" width="76" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="../Content/Default.aspx"><img src="images/toplinks/Arab.gif" width="36" height="14"></a>
+                          </td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top"><img src="images/right/Header.jpg" width="626" height="161"></td>
+                  </tr>
+                  <tr>
+                    <td height="31" align="right" valign="top">
+                      <table width="626" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="35" height="31" align="right" valign="top"><img src="images/inerpage/News_Right.gif" width="35" height="31"></td>
+                          <td align="left" valign="middle" background="images/inerpage/News_Bg.gif"><iframe src="NewsBar.aspx" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width:100%; height:20px; float:left;"></iframe></td>
+                          <td width="34" align="right" valign="top"><img src="images/inerpage/News_Left.gif" width="34" height="31"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="height:100%" valign="top">
+                      <table width="620" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="2" align="right" valign="top" background="images/inerpage/Border_Right.gif"><img src="images/inerpage/Border_Right.gif" width="2" height="3"></td>
+                          <td width="620" height="15" align="right" valign="top"></td>
+                          <td width="4" align="right" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="31" align="left" valign="top"><img src="images/pages/Contact.gif"></td>
+                          <td align="right" valign="top">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td height="31" align="right" valign="top" style="background-image:url(images/pages/Jobs_Bg.gif); background-repeat:repeat-x;">
+                            <table width="615" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="middle" class="red" style="height: 37px">
+                                  The Company E_Mail : &nbsp; &nbsp; <a class="RMENU" href="mailto:info@www.amwal.com.sa"><span style="text-decoration:underline">info@www.amwal.com.sa</span></a>
+                                </td>
+                                <td align="right" valign="top" style="height: 37px">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                  <div>
+                                    <table cellspacing="0" rules="all" border="0" id="ctl00_ContentPlaceHolder1_GridView1" width="615">
+                                      <tr>
+                                        <td>
+                                          <table width="100%">
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Label1" class="red">Riyadh</span></td>
+                                            </tr>
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl02_Label2" class="red">Riyadh<br>
+                                              Office 408 Alumam Office Building Salah Al Deen St.<br>
+                                              P.O. Box: 27026 Riyadh 11417 Kingdom of Saudi Arabia<br>
+                                              Tel: 00966 1 2911000 Fax: 00966 1 2921110<br>
+                                              e-mail: <a class='RMENU' href="mailto:riyadh@www.amwal.com.sa">riyadh@www.amwal.com.sa</a></span></td>
+                                            </tr>
+                                            <tr>
+                                              <td height="11" align="right" valign="top" background="images/pages/Con_Strip.gif"></td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table width="100%">
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Label1" class="red">Dammam</span></td>
+                                            </tr>
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl03_Label2" class="red">Dammam<br>
+                                              P.O. Box:1927 Dammam 31441<br>
+                                              Kingdom of Saudi Arabia<br>
+                                              Tel: 00966 3 8097799 Fax: 00966 3 8091178<br>
+                                              e-mail: <a class='RMENU' href="mailto:dammam@www.amwal.com.sa%3Cbr/%3E">dammam@www.amwal.com.sa<br></a></span></td>
+                                            </tr>
+                                            <tr>
+                                              <td height="11" align="right" valign="top" background="images/pages/Con_Strip.gif"></td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table width="100%">
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Label1" class="red">Doha</span></td>
+                                            </tr>
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl04_Label2" class="red">Doha (FINCORP)<br>
+                                              P. O. Box: 47324 Doha Qatar<br>
+                                              Tel: 0097 4 4313120<br>
+                                              Fax: 0097 4 4313180<br>
+                                              e-mail: <a class='RMENU' href="mailto:doha@fincorpgroup.com">doha@fincorpgroup.com</a></span></td>
+                                            </tr>
+                                            <tr>
+                                              <td height="11" align="right" valign="top" background="images/pages/Con_Strip.gif"></td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <table width="100%">
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl05_Label1" class="red">Cairo</span></td>
+                                            </tr>
+                                            <tr>
+                                              <td><span id="ctl00_ContentPlaceHolder1_GridView1_ctl05_Label2" class="red">Cairo (FINCORP)<br>
+                                              15 Alssad Club St.<br>
+                                              Dokki Cairo Egypt<br>
+                                              Tel : 0020 2 7497600 Fax: 0020 2 3358978<br>
+                                              e-mail: <a class='RMENU' href="mailto:cairo@fincorpgroup.com">cairo@fincorpgroup.com</a></span></td>
+                                            </tr>
+                                            <tr>
+                                              <td height="11" align="right" valign="top" background="images/pages/Con_Strip.gif"></td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top">
+                                  <table width="500" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="20" align="left" valign="top" bgcolor="#F8F8F8"><img src="images/pages/Contct_Pic.gif" width="16" height="54"></td>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8" class="red">
+                                        Fahd Abdullah Al-Kassim<br>
+                                        Chairman & Managing Director<br>
+                                        <a class="RMENU" href="mailto:fahad@www.amwal.com.sa"><span style="text-decoration:underline">fahad@www.amwal.com.sa</span></a>
+                                      </td>
+                                      <td width="5" align="right" valign="top" bgcolor="#F8F8F8" class="red">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td align="right" valign="top"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8"><img src="images/pages/Contct_Pic.gif" width="16" height="54"></td>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8" class="red">
+                                        Mr. Ibrahim A. Al-Olayan<br>
+                                        Partner & Managing Director of Dammam Branch<br>
+                                        <a class="RMENU" href="mailto:Olayan@www.amwal.com.sa"><span style="text-decoration:underline">Olayan@www.amwal.com.sa</span></a>
+                                      </td>
+                                      <td align="right" valign="top" bgcolor="#F8F8F8">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td align="right" valign="top"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8"><img src="images/pages/Contct_Pic.gif" width="16" height="54"></td>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8" class="red">
+                                        Khaled M. El Jaouni<br>
+                                        Executive Manager<br>
+                                        <a class="RMENU" href="mailto:Kiaouni@www.amwal.com.sa"><span style="text-decoration:underline">Kiaouni@www.amwal.com.sa</span></a>
+                                      </td>
+                                      <td align="right" valign="top" bgcolor="#F8F8F8">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td height="5" align="left" valign="top"></td>
+                                      <td align="right" valign="top"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8"><img src="images/pages/Contct_Pic.gif" width="16" height="54"></td>
+                                      <td align="left" valign="top" bgcolor="#F8F8F8" class="red">
+                                        Ahmed Samak<br>
+                                        Business Development Manager<br>
+                                        <a class="RMENU" href="mailto:asamak@www.amwal.com.sa"><span style="text-decoration:underline">asamak@www.amwal.com.sa</span></a>
+                                      </td>
+                                      <td align="right" valign="top" bgcolor="#F8F8F8">&nbsp;</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="right" valign="top">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td align="right" valign="top">
+                            <table width="620" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td valign="top"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="middle"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="3" align="right" valign="top">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="54" align="right" valign="bottom" background="images/bg/Footer_Bg.gif">
+          <div id="allrights">
+            All rights reserved © AMWAL FINANCIAL CONSULTANTS 2007
+          </div>
+          <div id="allrights2">
+            Powered By Tech Heights<a href="http://www.tech.com.sa" target="_blank"><img src="images/inerpage/Logo.gif" width="18" height="19" hspace="3" align="absmiddle"></a>
+          </div>
+        </td>
+      </tr>
+    </table><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQK4tMuUAgKexK2NCQKexK2NCQK33sGJAQLssvLQA8vNbo6OIGA/tAM5okyEW0ETNaZh"> 
+    <script type="text/javascript">
+
+
+    //<![CDATA[
+    var ctl00_Menu1_Data = new Object();
+    ctl00_Menu1_Data.disappearAfter = 500;
+    ctl00_Menu1_Data.horizontalOffset = 0;
+    ctl00_Menu1_Data.verticalOffset = 0;
+    ctl00_Menu1_Data.hoverClass = 'menure';
+    //]]>
+    </script>
+  </form>
+</body>
+</html>
