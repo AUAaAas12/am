@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head id="ctl00_myhead">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>:: Amwal Financial Consultants ::</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+  <form name="aspnetForm" method="post" action="NewsDetails.aspx?ID=8" id="aspnetForm">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NjczMjU5ODAPFgIeBlVwRmlsZWUWAmYPZBYCAgMPZBYEAgEPPCsADQEMFCsAB2QUKwACZBQrAAQFCzA6MCwwOjEsMDoyFCsAAhYGHgRUZXh0BQxJbnRyb2R1Y3Rpb24eBVZhbHVlBQxJbnRyb2R1Y3Rpb24eC05hdmlnYXRlVXJsBQ9QYWdlcy5hc3B4P0lEPTJkFCsAAhYGHwEFC091ciBNaXNzaW9uHwIFC091ciBNaXNzaW9uHwMFD1BhZ2VzLmFzcHg/SUQ9M2QUKwACFgYfAQUVRXhwZXJ0cyAmIENvbnN1bHRhbnRzHwIFFUV4cGVydHMgJiBDb25zdWx0YW50cx8DBQ9FeHBlcnRWaWV3LmFzcHhkFCsAAmQUKwAJBR8wOjAsMDoxLDA6MiwwOjMsMDo0LDA6NSwwOjYsMDo3FCsAAhYGHwEFHkluaXRpYWwgUHVibGljIE9mZmVyaW5ncyAoSVBPKR8CBR5Jbml0aWFsIFB1YmxpYyBPZmZlcmluZ3MgKElQTykfAwUYU2VydmljZURldGFpbHMuYXNweD9JRD02ZBQrAAIWBh8BBRFQcml2YXRlIFBsYWNlbWVudB8CBRFQcml2YXRlIFBsYWNlbWVudB8DBRhTZXJ2aWNlRGV0YWlscy5hc3B4P0lEPTdkFCsAAhYGHwEFIE1lcmdlcnMgQWNxdWlzaXRpb25zICYgRGlzcG9zYWxzHwIFIE1lcmdlcnMgQWNxdWlzaXRpb25zICYgRGlzcG9zYWxzHwMFGFNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9OGQUKwACFgYfAQURQ29ycG9yYXRlIGZpbmFuY2UfAgURQ29ycG9yYXRlIGZpbmFuY2UfAwUYU2VydmljZURldGFpbHMuYXNweD9JRD05ZBQrAAIWBh8BBTxDb252ZXJ0aW5nIEZhbWlseSBPd25lZCBFbnRlcnByaXNlcyBUbyBKb2ludCBTdG9jayBDb21wYW5pZXMfAgU8Q29udmVydGluZyBGYW1pbHkgT3duZWQgRW50ZXJwcmlzZXMgVG8gSm9pbnQgU3RvY2sgQ29tcGFuaWVzHwMFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTBkFCsAAhYGHwEFF0NvcnBvcmF0ZSBSZXN0cnVjdHVyaW5nHwIFF0NvcnBvcmF0ZSBSZXN0cnVjdHVyaW5nHwMFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTFkFCsAAhYGHwEFKkludmVzdG1lbnQgQXBwcmFpc2FsICYgRmVhc2liaWxpdHkgU3R1ZGllcx8CBSpJbnZlc3RtZW50IEFwcHJhaXNhbCAmIEZlYXNpYmlsaXR5IFN0dWRpZXMfAwUZU2VydmljZURldGFpbHMuYXNweD9JRD0xMmQUKwACFgYfAQUrVmFsdWF0aW9uIE9mIFNoYXJlcyAmQ2xvc2VseSBIZWxkIENvbXBhbmllcx8CBStWYWx1YXRpb24gT2YgU2hhcmVzICZDbG9zZWx5IEhlbGQgQ29tcGFuaWVzHwMFGVNlcnZpY2VEZXRhaWxzLmFzcHg/SUQ9MTNkZGRkZGQCCw9kFggCAQ8PFgIfAQVTT25lIGNvbXBhbnkgZm9yIHRoZSBTdXByZW1lIC4uIFRoZSB0cmFuc2FjdGlvbnMgcmVsYXRlZCB2YWx1ZSBvZiA2LjQgYmlsbGlvbiByaXlhbHNkZAIFDw8WAh8BBQk3LzI4LzIwMDdkZAIHDw8WAh8BBegbU2F1ZGkgc2hhcmVzIGluaXRpYXRlZCB0cmFuc2FjdGlvbnMgcmVsYXRlZCB0byB0aGUgd2VlayBzbGlnaHRseSBsb3dlciBhZnRlciBmbHVjdHVhdGluZyB3YXZlcyB3aXRuZXNzZWQgdGhlIGdlbmVyYWwgaW5kZXggb2YgdGhlIG1hcmtldCB3aXRoaW4gYSByZWxhdGl2ZWx5IG5hcnJvdyBtYXJnaW4gY2xvc2VkIHRvIHRoZSBpbXBhY3QgYXQgdGhlIGxldmVsIG9mIDc3MTEgcG9pbnRzLCBkb3duIGJ5IGZvdXIgbG9zdCAwLjA2JS4gQWZ0ZXIgZGVsaWJlcmF0aW5nIG1vcmUgdGhhbiAxNTMgbWlsbGlvbiBzaGFyZXMgd2VyZSBkaXN0cmlidXRlZCBhbW9uZyBhcHByb3hpbWF0ZWx5IDE4MSB0aG91c2FuZCB0cmFuc2FjdGlvbiB2YWx1ZSBvZiA2LjQgYmlsbGlvbiByaXlhbHMuIDxici8+CkFzIGZvciB0aGUgc2VjdG9ycywgdmFyaWVkIG1hcmtldCBpbmRpY2F0b3JzIG1vdmVtZW50IGJldHdlZW4gaGlnaCBhbmQgbG93IGNvbW11bmljYXRpb25zIHNlY3Rvciwgd2hlcmUgaXQgbG9zdCAxNCBwb2ludHMgdG8gMC41MSBwZXIgY2VudC4gQXMgd2VsbCBhcyB0aGUgaW5kdXN0cmlhbCBzZWN0b3IgODAgcG9pbnRzIGJ5IDAuNDMlLCB0aGUgYmFua2luZyBzZWN0b3IgdG8gc2V2ZW4gcG9pbnRzIGJ5IDAuMDQlLiBXaGlsZSBvbiB0aGUgb3RoZXIgc2lkZSwgdGhlIGluc3VyYW5jZSBzZWN0b3IgaGFzIGVhcm5lZCA1NyBwb2ludHMgYnkgMi45OSUsIGFuZCByb3NlIGJ5IDI1IHBvaW50cyBpbiB0aGUgZWxlY3RyaWNpdHkgc2VjdG9yIGJ5IDIuMjIlLCBhbmQgMTkgcG9pbnRzIGluIHRoZSBzZXJ2aWNlcyBzZWN0b3IgYnkgMC45NyUsIGFuZCB0aGUgYWdyaWN1bHR1cmFsIHNlY3RvciBieSAzNyBwb2ludHMgMC4gOTElLiBXaXRoIHByb2ZpdCBjZW1lbnQgc2VjdG9yIGluIHR1cm4sIHJvc2UgYnkgc2l4IHBvaW50cyBhbW91bnRlZCB0byAwLjElLiA8YnIvPgpJbiBhIGxvb2sgYXQgdGhlIG92ZXJhbGwgcGVyZm9ybWFuY2Ugb2YgdGhlIGNvcnBvcmF0ZSBtYXJrZXQgdHJhbnNhY3Rpb25zIHJlbGF0ZWQgd2l0aCB0aGUgZW5kIG9mIHllc3RlcmRheSwgd2Ugbm90ZSB0aGUgbG93IDMwIGNvbXBhbmllcyBtb3N0IG5vdGFibHkgU2F1ZGkgUmVhbCBFc3RhdGUgQ29tcGFueSwgd2hpY2ggbG9zdCAyLjUgcml5YWxzIHRvIGNsb3NlIGF0IGEgbGV2ZWwgb2YgNDAuNSByaXlhbHMgcGVyIHNoYXJlLiBLaW5nZG9tIEhvbGRpbmcgQ29tcGFueSwgd2hpY2ggY2xvc2VkIGF0IGEgbGV2ZWwgb2YgMTEuNzUgcml5YWxzIHF1YXJ0ZXIgbG9zcyByaXlhbHMgcGVyIHNoYXJlLiBXaGlsZSBvbiB0aGUgb3RoZXIgc2lkZSwgNDQgY29tcGFuaWVzIGNsb3NlZCBoaWdoZXIgb24gdGhlIG1vc3QgcHJvbWluZW50IGNvbXBhbnkgaGF2ZW4gZm9yIGluc3VyYW5jZSBhbmQgcmVpbnN1cmFuY2Ugcm9zZSBmb3IgdGhlIGNvb3BlcmF0aXZlIHRvIGNsb3NlIGF0IHRoZSBoaWdoZXN0IGxldmVsIG9mIDcxLjUgcml5YWxzIGdhaW4gb2YgNi41IHJpeWFscyBwZXIgc2hhcmUsIGFuZCB0aGUgU2F1ZGkgQ29tcGFueSBmb3IgY2FyIHNlcnZpY2VzLCB3aGljaCBnYWluZWQgMS41IHJpeWFscyB0byBjbG9zZSBhdCBhIGxldmVsIDI2IHJpeWFscyBwZXIgc2hhcmUuIFdpdGggY29tcGxldGVkIHRyYW5zYWN0aW9ucyByZWxhdGVkIHNoYXJlcyBvZiAyNCBjb21wYW5pZXMgeWVzdGVyZGF5IHdpdGhvdXQgY2hhbmdlIGluIHRoZSBsZXZlbCBvZiB0aGUgY2xvc3VyZSBsYXN0IFdlZG5lc2RheS4gPGJyLz4KSW4gdGVybXMgb2Ygc3RvY2sgcGVyZm9ybWFuY2UgbGVhZGVyc2hpcCwgdGhlIGNvbXBhbnkncyBzaGFyZXMgZ2FpbiBTYXVkaSBFbGVjdHJpY2l0eSBxdWFydGVyIHJpeWFscyB0byBiZSByZXRyaWVkIGF0IGEgbGV2ZWwgb2YgMTEuNSByaXlhbHMsIGFmdGVyIGNpcmN1bGF0aW9uIG9mIG1vcmUgdGhhbiAxLjggbWlsbGlvbiBzaGFyZXMgZXhjZWVkZWQgdGhlIHRvdGFsIHZhbHVlIG9mIDIxIG1pbGxpb24gcml5YWxzLiBUaGUgY29tcGFueSdzIHNoYXJlcyBjbG9zZWQgU2F1ZGkgQmFzaWMgSW5kdXN0cmllcyAiU0FCSUMiIGF0IHRoZSBsZXZlbCBvZiAxMjQuNzUgcml5YWxzIGxvc2VyIDAuNzUgcml5YWxzIGEgZGVjbGluZSBvZiAwLjYlLCB3aGVyZSB0aGUgdm9sdW1lIG9mIHNoYXJlcyB0cmFkZWQgbmVhcmx5IDEuMiBtaWxsaW9uIHNoYXJlcyBleGNlZWRlZCB0aGUgdG90YWwgdmFsdWUgb2YgMTQ4IG1pbGxpb24gcml5YWxzLiBUaGUgU2F1ZGkgQ29tbXVuaWNhdGlvbnMgQ29tcGFueSBzaGFyZXMgbG9zdCBhIHF1YXJ0ZXIgb2Ygcml5YWxzIHRvIGNsb3NlIGF0IDY4Ljc1IHJpeWFscyBsZXZlbCwgYSBkcm9wIG9mIDAuMzYgcGVyIGNlbnQsIGFmdGVyIGl0IGV4Y2VlZGVkIHRoZSB0b3RhbCB2YWx1ZSBvZiBzaGFyZXMgZXhjaGFuZ2VkIHdhcyAzMSBtaWxsaW9uIHJpeWFscyB3ZXJlIGRpc3RyaWJ1dGVkIGFtb25nIDQ1NCB0aG91c2FuZCBzaGFyZXMuIEl0IGVuZGVkIFJhamhpIGJhbmsgdHJhbnNhY3Rpb25zIHJlbGF0ZWQgeWVzdGVyZGF5IGF0IHRoZSBsZXZlbCBvZiA3OS4yNSByaXlhbHMgbG9zZSBoYWxmIHJpeWFscyBkb3duIDAuNjMlLCBhZnRlciB0cmFkaW5nIG92ZXIgNzE0IHRob3VzYW5kIHNoYXJlcyBleGNlZWRlZCB0aGUgdG90YWwgdmFsdWUgb2YgNTYgbWlsbGlvbiByaXlhbHMuIDxici8+CkVsc2V3aGVyZSwgdGhlIGNvbXBhbnkgaXNzdWVkIHNoYXJlcyBvZiB0aGUgTWVkaXRlcnJhbmVhbiBhbmQgR3VsZiBJbnN1cmFuY2UgYW5kIFJlaW5zdXJhbmNlIGNvb3BlcmF0aXZlICJNZWFkZSBwYWNrZWQiIGxpc3Qgb2YgdGhlIG1vc3QgYWN0aXZlIGNvbXBhbmllcyBieSBtYXJrZXQgdmFsdWUgYWZ0ZXIgaXQgZXhjZWVkZWQgdGhlIHRvdGFsIHZhbHVlIG9mIHNoYXJlcyBleGNoYW5nZWQgd2FzIDI5NCBtaWxsaW9uIHJpeWFscyBkaXN0cmlidXRlZCB0byA2LjggbWlsbGlvbiBzaGFyZXMsIHRoZSBjb21wYW55J3Mgc2hhcmVzIGNsb3NlZCBDYXNocGEgMi4gMjUgcml5YWxzIGF0IHRoZSBsZXZlbCBvZiA0NCByaXlhbHMgcGVyIHNoYXJlLiBTaGFyZXMgZm9sbG93ZWQgdGhlIFNhdWRpIGNvbXBhbnkgZm9yIGNhciBzZXJ2aWNlcywgd2hpY2ggaXNzdWVkIGEgbGlzdCBvZiBtb3JlIGNvbXBhbmllcyBhcyBxdWFudGl0YXRpdmUgbWFya2V0IGFjdGl2aXR5IGFsc28gYWZ0ZXIgdGhlIHZvbHVtZSBvZiBzaGFyZXMgdHJhZGVkIG5lYXJseSA5LjYgbWlsbGlvbiBzaGFyZXMgZXhjZWVkZWQgdGhlIHRvdGFsIHZhbHVlIG9mIDI0NiBtaWxsaW9uIHJpeWFscy4gV2hpbGUgdGhlIHNoYXJlcyAiZWNvbm9taWMgcmVjb25zdHJ1Y3Rpb24gb2YgdGhlIGNpdHkiIFNlY29uZCBvZiBhIG1vcmUgYWN0aXZlIGFzIHF1YW50aXRhdGl2ZSB0cmFkaW5nIHZvbHVtZSBvZiBvdmVyIDkuNSBtaWxsaW9uIHNoYXJlcyBleGNlZWRlZCB0aGUgdG90YWwgdmFsdWUgb2YgMTUwIG1pbGxpb24gcml5YWxzLCB0byB0ZXJtaW5hdGUgdGhlIGNvbXBhbnkncyBzaGFyZXMgeWVzdGVyZGF5IHRyYW5zYWN0aW9ucyByZWxhdGVkIGF0IHRoZSBsZXZlbCBvZiAxNiByaXlhbHMgQ2FzaHBhIDAuNzUgcml5YWxzIHBlciBzaGFyZS5kZAIJDxYGHgRocmVmBS5odHRwOi8vd3d3LmFsZXF0LmNvbS9uZXdzLnBocD9kbz1zaG93JmlkPTkwOTk1Hglpbm5lcmh0bWwFK3d3dy5hbGVxdC5jb20vbmV3cy5waHA/ZG89c2hvdyZhbXA7aWQ9OTA5OTUeBnRhcmdldAUGX2JsYW5rZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUSY3RsMDAkSW1hZ2VCdXR0b24xaZxXEzAkHQCbijXLHH4Oi4he4ws="> 
+    <script src="/WebResource.axd?d=FKueep1iRERnyq5qqu8fqA2&amp;t=633197202879462318" type="text/javascript"></script>
+    <table width="779" style="height:100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tr>
+        <td height="100%" align="right" valign="top">
+          <table width="779" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="height:100%">
+            <tr>
+              <td width="2" align="right" valign="top">&nbsp;</td>
+              <td width="141" height="100%" align="right" valign="top">
+                <table width="141" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="146" align="center" valign="middle"><img src="images/right/Logo.gif" width="130" height="117"></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <a href="#ctl00_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=DgNWkxle4ts5htuJqmIibw2&amp;t=633197202879462318" width="0" height="0" border="0"></a>
+                      <table id="ctl00_Menu1" cellpadding="0" cellspacing="0" border="0" height="22">
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/About_US.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="javascript:__doPostBack('ctl00$Menu1','')"><img src="images/right/Services.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n2">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="news.aspx"><img src="images/right/News.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="inquiry.aspx"><img src="images/right/Invest.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n4">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="Submit.aspx"><img src="images/right/Jobs.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5">
+                          <td>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="22">
+                              <tr>
+                                <td nowrap="nowrap" width="100%">
+                                  <a href="links.aspx"><img src="images/right/Links.gif" alt="" valign="middle"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <div id="ctl00_Menu1n0Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="Pages.aspx?ID=2"><font face="Tahoma" color="white" size="1">Introduction</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="Pages.aspx?ID=3"><font face="Tahoma" color="white" size="1">Our Mission</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ExpertView.aspx"><font face="Tahoma" color="white" size="1">Experts & Consultants</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=XhPfv1U1g8hMR9caKj690mMHA4WrU9x9s66pvk0kkzo1&amp;t=633197202879462318" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=wvdPt48BeJSaoLaM_2hgzJxUHJl2AyKHnuuDBvvTxYs1&amp;t=633197202879462318" alt="Scroll down"></div>
+                      </div>
+                      <div id="ctl00_Menu1n1Items" class="menu" style="display:none;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=6"><font face="Tahoma" color="white" size="1">Initial Public Offerings (IPO)</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=7"><font face="Tahoma" color="white" size="1">Private Placement</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=8"><font face="Tahoma" color="white" size="1">Mergers Acquisitions & Disposals</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=9"><font face="Tahoma" color="white" size="1">Corporate finance</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=10"><font face="Tahoma" color="white" size="1">Converting Family Owned Enterprises To Joint Stock Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=11"><font face="Tahoma" color="white" size="1">Corporate Restructuring</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=12"><font face="Tahoma" color="white" size="1">Investment Appraisal & Feasibility Studies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                          <tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n16">
+                            <td>
+                              <table cellpadding="0" cellspacing="0" border="0" width="100%" height="18">
+                                <tr>
+                                  <td nowrap="nowrap" width="100%">
+                                    <a href="ServiceDetails.aspx?ID=13"><font face="Tahoma" color="white" size="1">Valuation Of Shares &Closely Held Companies</font></a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                          </tr>
+                        </table>
+                        <div id="ctl00_Menu1n1ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=XhPfv1U1g8hMR9caKj690mMHA4WrU9x9s66pvk0kkzo1&amp;t=633197202879462318" alt="Scroll up"></div>
+                        <div id="ctl00_Menu1n1ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" align="center" style="display:none;"><img src="/WebResource.axd?d=wvdPt48BeJSaoLaM_2hgzJxUHJl2AyKHnuuDBvvTxYs1&amp;t=633197202879462318" alt="Scroll down"></div>
+                      </div><a id="ctl00_Menu1_SkipLink"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="10" align="right" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <table width="141" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="23" align="left" valign="top"><img src="images/right/Search_Tit.gif" width="84" height="18"></td>
+                        </tr>
+                        <tr>
+                          <td height="46" align="right" valign="top" background="images/bg/Search_Bg.gif">
+                            <table width="141" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td height="24" align="center"><input name="ctl00$TextBox1" type="text" id="ctl00_TextBox1" class="textarea"></td>
+                              </tr>
+                              <tr>
+                                <td height="22" align="right" valign="middle"><input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="images/right/Search_Button.gif" align="absmiddle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ImageButton1&quot;, &quot;&quot;, true, &quot;ssss&quot;, &quot;&quot;, false, false))" border="0"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top">
+                      <div id="ctl00_Flashar"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top">
+                      <a href="javascript:window.open('http://www.oanda.com/');void(0);"><img src="images/right/Curancy.gif" width="141" height="169"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="15" align="right" valign="top"></td>
+                  </tr>
+                </table>
+              </td>
+              <td width="7" align="right" valign="top">&nbsp;</td>
+              <td width="626" align="right" valign="top" style="height:100%">
+                <table width="626" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                  <tr>
+                    <td height="90" align="right" valign="top" background="images/bg/Bg_Top.gif">
+                      <table width="270" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td height="25">&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="Default.aspx"><img src="images/toplinks/Home.gif" width="47" height="14"></a>
+                          </td>
+                          <td>
+                            <a href="inquiry.aspx"><img src="images/toplinks/Invest.gif" width="65" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="ContactUS.aspx"><img src="images/toplinks/Contact.gif" width="76" height="13"></a>
+                          </td>
+                          <td>
+                            <a href="../Content/Default.aspx"><img src="images/toplinks/Arab.gif" width="36" height="14"></a>
+                          </td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" valign="top"><img src="images/right/Header.jpg" width="626" height="161"></td>
+                  </tr>
+                  <tr>
+                    <td height="31" align="right" valign="top">
+                      <table width="626" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td width="35" height="31" align="right" valign="top"><img src="images/inerpage/News_Right.gif" width="35" height="31"></td>
+                          <td align="left" valign="middle" background="images/inerpage/News_Bg.gif"><iframe src="NewsBar.aspx" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width:100%; height:20px; float:left;"></iframe></td>
+                          <td width="34" align="right" valign="top"><img src="images/inerpage/News_Left.gif" width="34" height="31"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="right" style="height:100%" valign="top">
+                      <table width="626" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                        <tr>
+                          <td width="5" align="right" valign="top" background="images/inerpage/Border_Right.gif" style="height: 19px"></td>
+                          <td width="620" align="right" valign="top"></td>
+                          <td width="4" align="right" valign="top"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif" style="height: 26px"><img src="../Content/images/inerpage/Border_Right.gif"></td>
+                          <td align="left" valign="top" style="height: 26px"><img src="images/pages/News_Tit.gif"></td>
+                          <td align="right" valign="top" style="height: 26px"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif" style="height: 11px"></td>
+                          <td align="right" valign="top" style="height: 11px"></td>
+                          <td align="right" valign="top" style="height: 11px"></td>
+                        </tr>
+                        <tr>
+                          <td align="right" valign="top" background="images/inerpage/Border_Right.gif"></td>
+                          <td align="right" valign="top" style="background-image:url(images/pages/News_Bg.gif); background-repeat:repeat-x">
+                            <table width="615" border="0" cellspacing="0" cellpadding="0" style="height:100%">
+                              <tr>
+                                <td align="right" valign="top">
+                                  <div align="right" class="content" style="width: 615px">
+                                    <span id="ctl00_ContentPlaceHolder1_Label1" class="titles">One company for the Supreme .. The transactions related value of 6.4 billion riyals</span><br>
+                                    <img height="16" src="images/pages/Strip_News.gif" width="620"><br>
+                                    <div id="wellpic" align="right"></div><span id="ctl00_ContentPlaceHolder1_Label2" class="date">7/28/2007</span><br>
+                                    <span id="ctl00_ContentPlaceHolder1_Label4" class="text">Saudi shares initiated transactions related to the week slightly lower after fluctuating waves witnessed the general index of the market within a relatively narrow margin closed to the impact at the level of 7711 points, down by four lost 0.06%. After deliberating more than 153 million shares were distributed among approximately 181 thousand transaction value of 6.4 billion riyals.<br>
+                                    As for the sectors, varied market indicators movement between high and low communications sector, where it lost 14 points to 0.51 per cent. As well as the industrial sector 80 points by 0.43%, the banking sector to seven points by 0.04%. While on the other side, the insurance sector has earned 57 points by 2.99%, and rose by 25 points in the electricity sector by 2.22%, and 19 points in the services sector by 0.97%, and the agricultural sector by 37 points 0. 91%. With profit cement sector in turn, rose by six points amounted to 0.1%.<br>
+                                    In a look at the overall performance of the corporate market transactions related with the end of yesterday, we note the low 30 companies most notably Saudi Real Estate Company, which lost 2.5 riyals to close at a level of 40.5 riyals per share. Kingdom Holding Company, which closed at a level of 11.75 riyals quarter loss riyals per share. While on the other side, 44 companies closed higher on the most prominent company haven for insurance and reinsurance rose for the cooperative to close at the highest level of 71.5 riyals gain of 6.5 riyals per share, and the Saudi Company for car services, which gained 1.5 riyals to close at a level 26 riyals per share. With completed transactions related shares of 24 companies yesterday without change in the level of the closure last Wednesday.<br>
+                                    In terms of stock performance leadership, the company's shares gain Saudi Electricity quarter riyals to be retried at a level of 11.5 riyals, after circulation of more than 1.8 million shares exceeded the total value of 21 million riyals. The company's shares closed Saudi Basic Industries "SABIC" at the level of 124.75 riyals loser 0.75 riyals a decline of 0.6%, where the volume of shares traded nearly 1.2 million shares exceeded the total value of 148 million riyals. The Saudi Communications Company shares lost a quarter of riyals to close at 68.75 riyals level, a drop of 0.36 per cent, after it exceeded the total value of shares exchanged was 31 million riyals were distributed among 454 thousand shares. It ended Rajhi bank transactions related yesterday at the level of 79.25 riyals lose half riyals down 0.63%, after trading over 714 thousand shares exceeded the total value of 56 million riyals.<br>
+                                    Elsewhere, the company issued shares of the Mediterranean and Gulf Insurance and Reinsurance cooperative "Meade packed" list of the most active companies by market value after it exceeded the total value of shares exchanged was 294 million riyals distributed to 6.8 million shares, the company's shares closed Cashpa 2. 25 riyals at the level of 44 riyals per share. Shares followed the Saudi company for car services, which issued a list of more companies as quantitative market activity also after the volume of shares traded nearly 9.6 million shares exceeded the total value of 246 million riyals. While the shares "economic reconstruction of the city" Second of a more active as quantitative trading volume of over 9.5 million shares exceeded the total value of 150 million riyals, to terminate the company's shares yesterday transactions related at the level of 16 riyals Cashpa 0.75 riyals per share.</span><br>
+                                    <a href="http://www.aleqt.com/news.php?do=show&id=90995" id="ctl00_ContentPlaceHolder1_link" class="RMENU" style="color: #911821" target="_blank">www.aleqt.com/news.php?do=show&amp;id=90995</a>
+                                  </div>&nbsp;
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" style="height: 2px"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="right" valign="top"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td width="3" align="right" valign="top">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="54" align="right" valign="bottom" background="images/bg/Footer_Bg.gif">
+          <div id="allrights">
+            All rights reserved © AMWAL FINANCIAL CONSULTANTS 2007
+          </div>
+          <div id="allrights2">
+            Powered By Tech Heights<a href="http://www.tech.com.sa" target="_blank"><img src="images/inerpage/Logo.gif" width="18" height="19" hspace="3" align="absmiddle"></a>
+          </div>
+        </td>
+      </tr>
+    </table><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQKWjI/UAgKexK2NCQKexK2NCQK33sGJAQLssvLQAyxoh4UgtQEFE6ysQ22iESx4ioxE"> 
+    <script type="text/javascript">
+
+
+    <!--
+    var ctl00_Menu1_Data = new Object();
+    ctl00_Menu1_Data.disappearAfter = 500;
+    ctl00_Menu1_Data.horizontalOffset = 0;
+    ctl00_Menu1_Data.verticalOffset = 0;
+    ctl00_Menu1_Data.hoverClass = ' menure';
+    // -->
+    </script>
+  </form>
+</body>
+</html>
